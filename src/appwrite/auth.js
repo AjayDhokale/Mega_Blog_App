@@ -52,7 +52,7 @@ export class AuthService {
         try {
             return this.account.get()
         } catch (error) {
-            console.log("Appwrite service :: getcurrentUser :: error  ", error);
+            // console.log("Appwrite service :: getcurrentUser :: error  ", error);
             return null
         }
 
