@@ -60,7 +60,7 @@ function Home() {
                 <div className='flex flex-wrap'>
                     {
                         posts.map((post) => (
-                            <div className='bg-white m-10 flex justify-center items-center '>
+                            <div className='p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4'>
                                 <PostCard {...post} />
                             </div>
                         ))

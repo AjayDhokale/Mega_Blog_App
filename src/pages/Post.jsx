@@ -49,11 +49,11 @@ function Post() {
     return post ? (
         <div className='py-8'>
             <Container >
-                <div className='w-full flex justify-center mb-4 relative border rounded-xl p-2'>
+                <div className='w-full max-h-[420px] overflow-hidden rounded-xl'>
                     <img
                         src={appwriteService.getFilePreview(post.featuredImage)}
                         alt={post.title}
-                        className='rounded-xl'
+                        className='w-full h-full object-cover'
                     />
 
                     {isAuthor && (
